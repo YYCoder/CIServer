@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "yarn.lock",
+    "node_modules",
+    ".gitignore"
+  ],
+  "verbose": true
+}

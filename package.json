@@ -1,0 +1,33 @@
+{
+  "name": "ciserver",
+  "version": "1.0.0",
+  "description": "VPS CI Server. proxy github webhook request to Travis CI or other third party CI service, etc.",
+  "main": "src/index.js",
+  "bin": {
+    "nodemon": "./node_modules/.bin/nodemon"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js --dev",
+    "pro": "pm2 start process.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YYCoder/CIServer.git"
+  },
+  "keywords": [
+    "Koa"
+  ],
+  "author": "Markey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YYCoder/CIServer/issues"
+  },
+  "homepage": "https://github.com/YYCoder/CIServer#readme",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.4",
+    "signale": "^1.2.1"
+  }
+}
